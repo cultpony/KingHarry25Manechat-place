@@ -680,7 +680,7 @@ const { html, render } = mlp_uhtml;
     return bucket[Math.floor(Math.random() * bucket.length)];
   }
 
-  const FOCUS_AREA_SIZE = 75;
+  const FOCUS_AREA_SIZE = 1000;
   /**
    * Select a random pixel weighted by the mask.
    *
@@ -875,8 +875,8 @@ const { html, render } = mlp_uhtml;
     console.error(`[${new Date().toISOString()}]`, ...arguments);
   }
 
-  const botTimeout = 5000;
-  const botAfterPlaceTimeout = 3000;
+  const botTimeout = 3000;
+  const botAfterPlaceTimeout = 1500;
   (async () => {
     while (true) {
       // Update the minimap image (necessary for checking the diff)
